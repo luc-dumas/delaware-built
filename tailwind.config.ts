@@ -26,6 +26,10 @@ export default {
         "on-surface": "hsl(var(--on-surface))",
         outline: "hsl(var(--outline))",
         "outline-variant": "hsl(var(--outline-variant))",
+        "green-accent": {
+          DEFAULT: "hsl(var(--green-accent))",
+          foreground: "hsl(var(--green-accent-foreground))",
+        },
         primary: {
           DEFAULT: "hsl(var(--primary))",
           foreground: "hsl(var(--primary-foreground))",

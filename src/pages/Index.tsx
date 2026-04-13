@@ -3,14 +3,14 @@ import { useState, useEffect } from "react";
 import logo from "@/assets/logo.svg";
 
 const services = [
-  { id: "01", title: "Cabinetry", description: "Bespoke storage solutions crafted from premium hardwoods, prioritizing functional geometry." },
-  { id: "02", title: "Timber Framing", description: "Structural skeletons defined by traditional joinery and monumental scale." },
-  { id: "03", title: "Carpentry", description: "Precision finishing and structural woodcraft executed with surgical accuracy." },
-  { id: "04", title: "Renovations", description: "Transforming existing volumes through thoughtful architectural intervention." },
-  { id: "05", title: "Bathrooms", description: "Minimalist sanctuaries combining raw materials with refined utility." },
-  { id: "06", title: "Kitchens", description: "Culinary hubs built for durability and visual silence." },
-  { id: "07", title: "Trim", description: "The final detail. Precision lines that define the spatial boundaries." },
-  { id: "08", title: "Decks", description: "Outdoor structures extending the architectural footprint into the landscape." },
+  { id: "01", title: "Cabinetry", description: "Custom built-ins, kitchens, vanities, and architectural millwork." },
+  { id: "02", title: "Timber Framing", description: "Sheds, barn frames, pergolas, and other timber work." },
+  { id: "03", title: "Finish Carpentry", description: "Trim, molding, doors, and windows." },
+  { id: "04", title: "Kitchen & Bath Remodels", description: "Full renovations, honest timelines, one point of contact." },
+  { id: "05", title: "Decks", description: "Outdoor structures built to handle the weather." },
+  { id: "06", title: "Built-ins", description: "Shelving, window seats, mud rooms, and storage designed around your space." },
+  { id: "07", title: "Trim & Millwork", description: "Baseboards, casings, wainscoting, crown, and custom millwork." },
+  { id: "08", title: "General Remodeling", description: "Framing, drywall, flooring, tiling, painting, minor electrical and plumbing." },
 ];
 
 const works = [
@@ -64,7 +64,7 @@ export default function Index() {
       {/* Navbar */}
       <nav className={`fixed top-0 left-0 w-full z-50 transition-all duration-500 px-6 md:px-12 flex justify-between items-center ${scrolled ? 'bg-surface/95 backdrop-blur-md py-3 shadow-sm' : 'bg-transparent py-5'}`}>
         <div className="flex items-center gap-3">
-          <img src={logo} alt="Delaware Built" className="h-18 md:h-[5.5rem] w-auto" />
+          <img src={logo} alt="Delaware Built" className="h-20 md:h-24 w-auto" />
         </div>
         
         <div className="hidden md:flex gap-10 text-xs font-bold tracking-widest uppercase text-on-surface">
@@ -95,7 +95,7 @@ export default function Index() {
               </h1>
               <p className="text-green-accent text-base md:text-lg font-light uppercase tracking-widest">Built with Care.</p>
               <p className="text-outline text-xs font-light leading-relaxed max-w-lg uppercase tracking-[0.2em]">
-                Custom Cabinetry · Timber Framing · Finish Carpentry · Decks · Built-Ins · Kitchen &amp; Bath Remodels · Trim &amp; Millwork
+                Custom Cabinetry · Timber Framing · Finish Carpentry · Decks · Built-Ins · Kitchen &amp; Bath Remodels · Trim &amp; Millwork · Pergolas
               </p>
               <div className="flex gap-4 flex-wrap">
                 <a href="#contact" className="bg-green-accent text-green-accent-foreground px-8 py-4 text-xs font-bold uppercase tracking-widest hover:opacity-90 transition-opacity">
@@ -167,7 +167,7 @@ export default function Index() {
         {/* Selected Works Section */}
         <section id="works" className="bg-secondary py-32 px-6 md:px-0 overflow-hidden">
           <div className="md:px-24 mb-16">
-            <h2 className="text-2xl font-[300] uppercase tracking-widest">SELECTED WORKS</h2>
+            <h2 className="text-2xl font-[300] uppercase tracking-widest">WORK</h2>
             <div className="mt-4 h-1 w-12 bg-green-accent"></div>
           </div>
           
@@ -267,15 +267,6 @@ export default function Index() {
             <span className="opacity-60 font-normal">© 2024 DELAWARE BUILT</span>
           </div>
           
-          <div className="flex gap-12">
-            <a href="#" className="opacity-60 hover:opacity-100 transition-opacity">INSTAGRAM</a>
-            <a href="#" className="opacity-60 hover:opacity-100 transition-opacity">LINKEDIN</a>
-            <a href="#contact" className="opacity-60 hover:opacity-100 transition-opacity">CONTACT</a>
-          </div>
-          
-          <div className="opacity-60">
-            EST. 2012 / PRECISION BUILT
-          </div>
         </div>
       </footer>
     </div>

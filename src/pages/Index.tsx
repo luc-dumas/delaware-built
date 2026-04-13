@@ -64,7 +64,7 @@ export default function Index() {
       {/* Navbar */}
       <nav className={`fixed top-0 left-0 w-full z-50 transition-all duration-500 px-6 md:px-12 flex justify-between items-center ${scrolled ? 'bg-surface/95 backdrop-blur-md py-3 shadow-sm' : 'bg-transparent py-5'}`}>
         <div className="flex items-center gap-3">
-          <img src={logo} alt="Delaware Built" className="h-16 md:h-20 w-auto" />
+          <img src={logo} alt="Delaware Built" className="h-18 md:h-[5.5rem] w-auto" />
         </div>
         
         <div className="hidden md:flex gap-10 text-xs font-bold tracking-widest uppercase text-on-surface">
@@ -94,7 +94,7 @@ export default function Index() {
                 Delaware Built.
               </h1>
               <p className="text-green-accent text-base md:text-lg font-light uppercase tracking-widest">Built with Care.</p>
-              <p className="text-outline text-[10px] font-light leading-relaxed max-w-lg uppercase tracking-[0.25em]">
+              <p className="text-outline text-xs font-light leading-relaxed max-w-lg uppercase tracking-[0.2em]">
                 Custom Cabinetry · Timber Framing · Finish Carpentry · Decks · Built-Ins · Kitchen &amp; Bath Remodels · Trim &amp; Millwork
               </p>
               <div className="flex gap-4 flex-wrap">

@@ -106,15 +106,6 @@ export default function Index() {
                 </a>
               </div>
 
-              {/* Stats */}
-              <div className="flex gap-12 mt-4">
-                {stats.map((stat) => (
-                  <div key={stat.label}>
-                    <span className="text-3xl font-[300] text-green-accent">{stat.value}</span>
-                    <p className="text-[10px] uppercase tracking-widest text-outline mt-1 font-semibold">{stat.label}</p>
-                  </div>
-                ))}
-              </div>
             </motion.div>
 
             <motion.div

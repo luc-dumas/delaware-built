@@ -91,11 +91,11 @@ export default function Index() {
             >
               <div className="h-1 w-16 bg-green-accent" />
               <h1 className="text-4xl md:text-6xl font-[200] leading-tight tracking-tight uppercase">
-                Quality Craft.<br />
-                <span className="text-green-accent font-[400]">Built to Last.</span>
+                Delaware Built.<br />
+                <span className="text-green-accent font-[400]">Built with Care.</span>
               </h1>
-              <p className="text-outline text-lg font-light leading-relaxed max-w-md">
-                Delaware's trusted name in custom carpentry, renovations, and fine woodworking. From concept to completion, we build with precision.
+              <p className="text-outline text-sm font-light leading-relaxed max-w-lg uppercase tracking-widest">
+                Custom cabinetry · timber framing · finish carpentry · decks · built-ins · kitchen &amp; bath remodels · trim &amp; millwork
               </p>
               <div className="flex gap-4 flex-wrap">
                 <a href="#contact" className="bg-green-accent text-green-accent-foreground px-8 py-4 text-xs font-bold uppercase tracking-widest hover:opacity-90 transition-opacity">

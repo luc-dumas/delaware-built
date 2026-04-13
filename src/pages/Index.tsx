@@ -64,7 +64,7 @@ export default function Index() {
       {/* Navbar */}
       <nav className={`fixed top-0 left-0 w-full z-50 transition-all duration-500 px-6 md:px-12 flex justify-between items-center ${scrolled ? 'bg-surface/95 backdrop-blur-md py-3 shadow-sm' : 'bg-transparent py-5'}`}>
         <div className="flex items-center gap-3">
-          <img src={logo} alt="Delaware Built" className="h-12 md:h-14 w-auto" />
+          <img src={logo} alt="Delaware Built" className="h-14 md:h-16 w-auto" />
         </div>
         
         <div className="hidden md:flex gap-10 text-xs font-bold tracking-widest uppercase text-on-surface">
@@ -106,15 +106,6 @@ export default function Index() {
                 </a>
               </div>
 
-              {/* Stats */}
-              <div className="flex gap-12 mt-4">
-                {stats.map((stat) => (
-                  <div key={stat.label}>
-                    <span className="text-3xl font-[300] text-green-accent">{stat.value}</span>
-                    <p className="text-[10px] uppercase tracking-widest text-outline mt-1 font-semibold">{stat.label}</p>
-                  </div>
-                ))}
-              </div>
             </motion.div>
 
             <motion.div

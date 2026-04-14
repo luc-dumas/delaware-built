@@ -38,7 +38,7 @@ export default function ContactForm() {
             placeholder="John Doe"
             value={formData.name}
             onChange={(e) => setFormData({ ...formData, name: e.target.value })}
-            className="w-full bg-transparent border-0 border-b border-outline-variant focus:ring-0 focus:border-green-accent transition-colors py-2 px-0 font-light placeholder:text-outline-variant/50"
+className="w-full bg-transparent border-0 border-b border-outline-variant focus:ring-0 focus:border-green-accent transition-colors py-2 px-1 font-light placeholder:text-outline-variant/50"
           />
         </div>
         <div className="relative group">
@@ -48,7 +48,7 @@ export default function ContactForm() {
             placeholder="email@example.com"
             value={formData.email}
             onChange={(e) => setFormData({ ...formData, email: e.target.value })}
-            className="w-full bg-transparent border-0 border-b border-outline-variant focus:ring-0 focus:border-green-accent transition-colors py-2 px-0 font-light placeholder:text-outline-variant/50"
+className="w-full bg-transparent border-0 border-b border-outline-variant focus:ring-0 focus:border-green-accent transition-colors py-2 px-1 font-light placeholder:text-outline-variant/50"
           />
         </div>
       </div>
@@ -60,7 +60,7 @@ export default function ContactForm() {
           placeholder="Describe the scale and intent of your project..."
           value={formData.message}
           onChange={(e) => setFormData({ ...formData, message: e.target.value })}
-          className="w-full bg-transparent border-0 border-b border-outline-variant focus:ring-0 focus:border-green-accent transition-colors py-2 px-0 font-light resize-none placeholder:text-outline-variant/50"
+          className="w-full bg-transparent border-0 border-b border-outline-variant focus:ring-0 focus:border-green-accent transition-colors py-2 px-1 font-light resize-none placeholder:text-outline-variant/50"
         />
       </div>
 

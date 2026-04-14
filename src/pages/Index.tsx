@@ -209,54 +209,7 @@ export default function Index() {
               <div className="mt-6 h-1 w-12 bg-green-accent mx-auto"></div>
             </div>
             
-            <form className="space-y-16" onSubmit={(e) => e.preventDefault()}>
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-16">
-                <div className="relative group">
-                  <label className="block text-[10px] font-semibold uppercase tracking-widest mb-2 group-focus-within:text-green-accent transition-colors">FULL NAME</label>
-                  <input 
-                    type="text" 
-                    placeholder="John Doe"
-                    className="w-full bg-transparent border-0 border-b border-outline-variant focus:ring-0 focus:border-green-accent transition-colors py-2 px-0 font-light placeholder:text-outline-variant/50"
-                  />
-                </div>
-                <div className="relative group">
-                  <label className="block text-[10px] font-semibold uppercase tracking-widest mb-2 group-focus-within:text-green-accent transition-colors">EMAIL ADDRESS</label>
-                  <input 
-                    type="email" 
-                    placeholder="email@example.com"
-                    className="w-full bg-transparent border-0 border-b border-outline-variant focus:ring-0 focus:border-green-accent transition-colors py-2 px-0 font-light placeholder:text-outline-variant/50"
-                  />
-                </div>
-              </div>
-              
-              <div className="relative group">
-                <label className="block text-[10px] font-semibold uppercase tracking-widest mb-2 group-focus-within:text-green-accent transition-colors">PROJECT TYPE</label>
-                <select className="w-full bg-transparent border-0 border-b border-outline-variant focus:ring-0 focus:border-green-accent transition-colors py-2 px-0 font-light appearance-none">
-                  <option>CABINETRY</option>
-                  <option>TIMBER FRAMING</option>
-                  <option>RENOVATION</option>
-                  <option>NEW BUILD</option>
-                </select>
-              </div>
-              
-              <div className="relative group">
-                <label className="block text-[10px] font-semibold uppercase tracking-widest mb-2 group-focus-within:text-green-accent transition-colors">MESSAGE</label>
-                <textarea 
-                  rows={4}
-                  placeholder="Describe the scale and intent of your project..."
-                  className="w-full bg-transparent border-0 border-b border-outline-variant focus:ring-0 focus:border-green-accent transition-colors py-2 px-0 font-light resize-none placeholder:text-outline-variant/50"
-                />
-              </div>
-              
-              <div className="flex justify-center pt-8">
-                <button 
-                  type="submit"
-                  className="bg-green-accent text-green-accent-foreground px-16 py-5 text-xs font-bold uppercase tracking-widest-xl transition-all duration-300 hover:opacity-90"
-                >
-                  SEND MESSAGE
-                </button>
-              </div>
-            </form>
+            <ContactForm />
           </div>
         </section>
       </main>

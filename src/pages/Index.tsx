@@ -1,6 +1,8 @@
 import { motion } from "framer-motion";
 import { useState, useEffect } from "react";
 import logo from "@/assets/logo.svg";
+import { supabase } from "@/integrations/supabase/client";
+import { toast } from "sonner";
 
 const services = [
   { id: "01", title: "Cabinetry", description: "Custom built-ins, kitchens, vanities, and architectural millwork." },

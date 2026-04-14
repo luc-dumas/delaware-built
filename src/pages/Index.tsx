@@ -3,6 +3,7 @@ import { useState, useEffect } from "react";
 import logo from "@/assets/logo.svg";
 import { supabase } from "@/integrations/supabase/client";
 import { toast } from "sonner";
+import ContactForm from "@/components/ContactForm";
 
 const services = [
   { id: "01", title: "Cabinetry", description: "Custom built-ins, kitchens, vanities, and architectural millwork." },

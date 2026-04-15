@@ -1,6 +1,7 @@
 import { motion } from "framer-motion";
 import { useState, useEffect } from "react";
 import logo from "@/assets/logo.svg";
+import builderPhoto from "@/assets/builder.jpg";
 import { supabase } from "@/integrations/supabase/client";
 import { toast } from "sonner";
 import ContactForm from "@/components/ContactForm";
@@ -209,7 +210,7 @@ export default function Index() {
                 viewport={{ once: true }}
                 transition={{ duration: 0.8 }}
               >
-                <h2 className="text-2xl font-[300] uppercase tracking-widest mb-4">THE BUILDER</h2>
+                <h2 className="text-2xl font-[300] uppercase tracking-widest mb-4">ABOUT</h2>
                 <div className="h-1 w-12 bg-green-accent mb-10"></div>
                 <p className="text-outline font-light leading-relaxed text-sm md:text-base">
                   I started building when I was 18 on a farm, when my boss handed me a tape measure and a speed square and put me to work on a barn. Since then, I've worked in carpentry, cabinetry, and timber framing, and spent some time away as a software engineer—but I've always found my way back. What's kept me in it is a kind of curiosity: how people build, how traditions develop, and what makes something work. I spend a lot of time reading, looking, and trying to understand it. There's always more to learn, and that's a big part of what I like about the work.
@@ -223,8 +224,8 @@ export default function Index() {
               transition={{ duration: 0.8, delay: 0.2 }}
               className="md:col-span-5"
             >
-              <div className="aspect-[4/5] bg-card overflow-hidden flex items-center justify-center">
-                <p className="text-outline text-xs uppercase tracking-widest">Your photo here</p>
+              <div className="aspect-[3/4] max-w-xs mx-auto overflow-hidden">
+                <img src={builderPhoto} alt="Builder at work" className="w-full h-full object-cover" />
               </div>
             </motion.div>
           </div>

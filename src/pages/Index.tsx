@@ -74,6 +74,7 @@ export default function Index() {
           <a href="#" className="border-b border-green-accent pb-1 text-green-accent">HOME</a>
           <a href="#services" className="hover:text-green-accent transition-colors">SERVICES</a>
           <a href="#works" className="hover:text-green-accent transition-colors">WORKS</a>
+          <a href="#about" className="hover:text-green-accent transition-colors">ABOUT</a>
           <a href="#contact" className="hover:text-green-accent transition-colors">CONTACT</a>
         </div>
 
@@ -98,14 +99,11 @@ export default function Index() {
               </h1>
               <p className="text-green-accent text-base md:text-lg font-light uppercase tracking-widest">Built with Care.</p>
               <p className="text-outline text-xs font-light leading-relaxed max-w-lg uppercase tracking-[0.2em]">
-                Custom Cabinetry · Timber Framing · Finish Carpentry · Decks · Built-Ins · Kitchen &amp; Bath Remodels · Trim &amp; Millwork · Pergolas
+                Custom Cabinetry · Timber Framing · Finish Carpentry · Decks · Built-Ins · Kitchen &amp; Bath Remodels · Trim &amp; Millwork · Pergolas · And More
               </p>
               <div className="flex gap-4 flex-wrap">
                 <a href="#contact" className="bg-green-accent text-green-accent-foreground px-8 py-4 text-xs font-bold uppercase tracking-widest hover:opacity-90 transition-opacity">
                   Start Your Project
-                </a>
-                <a href="#works" className="border border-on-surface px-8 py-4 text-xs font-bold uppercase tracking-widest hover:bg-on-surface hover:text-surface transition-colors">
-                  View Our Work
                 </a>
               </div>
 
@@ -198,6 +196,37 @@ export default function Index() {
                 </div>
               </motion.div>
             ))}
+          </div>
+        </section>
+
+        {/* About Section */}
+        <section id="about" className="py-32 px-6 md:px-24 bg-surface">
+          <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-12 gap-16 items-center">
+            <div className="md:col-span-7">
+              <motion.div
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.8 }}
+              >
+                <h2 className="text-2xl font-[300] uppercase tracking-widest mb-4">THE BUILDER</h2>
+                <div className="h-1 w-12 bg-green-accent mb-10"></div>
+                <p className="text-outline font-light leading-relaxed text-sm md:text-base">
+                  I started building when I was 18 on a farm, when my boss handed me a tape measure and a speed square and put me to work on a barn. Since then, I've worked in carpentry, cabinetry, and timber framing, and spent some time away as a software engineer—but I've always found my way back. What's kept me in it is a kind of curiosity: how people build, how traditions develop, and what makes something work. I spend a lot of time reading, looking, and trying to understand it. There's always more to learn, and that's a big part of what I like about the work.
+                </p>
+              </motion.div>
+            </div>
+            <motion.div
+              initial={{ opacity: 0, scale: 0.95 }}
+              whileInView={{ opacity: 1, scale: 1 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.8, delay: 0.2 }}
+              className="md:col-span-5"
+            >
+              <div className="aspect-[4/5] bg-card overflow-hidden flex items-center justify-center">
+                <p className="text-outline text-xs uppercase tracking-widest">Your photo here</p>
+              </div>
+            </motion.div>
           </div>
         </section>
 

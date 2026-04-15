@@ -3,9 +3,12 @@ import { useState, useEffect } from "react";
 import logo from "@/assets/logo.svg";
 import builderPhoto from "@/assets/builder.jpg";
 import workCabinet from "@/assets/work-cabinet.jpg";
+import workCabinetShop from "@/assets/work-cabinet-shop.jpeg";
 import workWindowSeat from "@/assets/work-window-seat.jpeg";
 import workTimber1 from "@/assets/work-timber1.jpeg";
 import workTimber2 from "@/assets/work-timber2.jpg";
+import workMantel from "@/assets/work-mantel.jpeg";
+import workKitchen from "@/assets/work-kitchen.jpg";
 import { supabase } from "@/integrations/supabase/client";
 import { toast } from "sonner";
 import ContactForm from "@/components/ContactForm";
@@ -27,28 +30,49 @@ const works = [
     year: "2024",
     image: workCabinet,
     alt: "Custom rift sawn white oak cabinet in workshop",
-    span: "md:col-span-6"
+    span: "md:col-span-4"
+  },
+  {
+    title: "CABINETRY IN PROGRESS",
+    year: "2024",
+    image: workCabinetShop,
+    alt: "Cabinets being built and clamped in the shop",
+    span: "md:col-span-4"
+  },
+  {
+    title: "WHITE KITCHEN — TONY SANDKAMP WOODWORKS",
+    year: "2021",
+    image: workKitchen,
+    alt: "White kitchen with island built with Tony Sandkamp Woodworks",
+    span: "md:col-span-4"
+  },
+  {
+    title: "CUSTOM MANTEL",
+    year: "2024",
+    image: workMantel,
+    alt: "Custom built fireplace mantel in workshop",
+    span: "md:col-span-4"
   },
   {
     title: "BUILT-IN WINDOW SEAT",
     year: "2023",
     image: workWindowSeat,
     alt: "Custom built-in seating area for bay window",
-    span: "md:col-span-6"
+    span: "md:col-span-4"
   },
   {
     title: "TIMBER FRAME — HUGH LOFTING TIMBER FRAMING",
     year: "2023",
     image: workTimber1,
     alt: "Timber frame structure built with Hugh Lofting Timber Framing",
-    span: "md:col-span-6"
+    span: "md:col-span-4"
   },
   {
     title: "TIMBER FRAME DETAIL — HUGH LOFTING TIMBER FRAMING",
     year: "2023",
     image: workTimber2,
     alt: "Timber frame joinery detail built with Hugh Lofting Timber Framing",
-    span: "md:col-span-6"
+    span: "md:col-span-4"
   }
 ];
 
@@ -177,7 +201,7 @@ export default function Index() {
             <div className="mt-4 h-1 w-12 bg-green-accent"></div>
           </div>
           
-          <div className="grid grid-cols-1 md:grid-cols-12 gap-12 md:px-12">
+          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-12 gap-6 md:px-12">
             {works.map((work) => (
               <motion.div 
                 key={work.title}
@@ -194,9 +218,9 @@ export default function Index() {
                     className="w-full h-full object-cover transition-all duration-700 group-hover:scale-105"
                   />
                 </div>
-                <div className="mt-6 flex justify-between items-baseline">
-                  <h4 className="text-lg font-light uppercase tracking-tighter-xl">{work.title}</h4>
-                  <span className="text-[10px] font-semibold text-green-accent uppercase tracking-widest">{work.year}</span>
+                <div className="mt-4 flex justify-between items-baseline">
+                  <h4 className="text-xs font-light uppercase tracking-wider">{work.title}</h4>
+                  <span className="text-[10px] font-semibold text-green-accent uppercase tracking-widest ml-2 shrink-0">{work.year}</span>
                 </div>
               </motion.div>
             ))}

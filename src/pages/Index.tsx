@@ -2,6 +2,10 @@ import { motion } from "framer-motion";
 import { useState, useEffect } from "react";
 import logo from "@/assets/logo.svg";
 import builderPhoto from "@/assets/builder.jpg";
+import workCabinet from "@/assets/work-cabinet.jpg";
+import workWindowSeat from "@/assets/work-window-seat.jpeg";
+import workTimber1 from "@/assets/work-timber1.jpeg";
+import workTimber2 from "@/assets/work-timber2.jpg";
 import { supabase } from "@/integrations/supabase/client";
 import { toast } from "sonner";
 import ContactForm from "@/components/ContactForm";
@@ -19,32 +23,32 @@ const services = [
 
 const works = [
   {
-    title: "REHOBOTH RESIDENCE",
-    year: "2023",
-    image: "https://lh3.googleusercontent.com/aida-public/AB6AXuChZCPkBFI3uQRUakAn2cte7z02A_nCwA9D7b7u4FK1U7zePun3rJM7HojGgy8iwx39PzbNfY6i9g93UUAu_e95g2y7lwPadCieaS0OmcGoyEh0V76qwfLqlKYWdrAy_VNaClGoaTbTZTEqzmhu5kgXQCr9c_wbyXXBm7oL8qBmmMgOi9BXPxY9bl0nFhqofyb4VkGwtAzw87L-j_Y0snFSA2wE02N32as_61dnfaZbpfn79HYhlynWacq8d-iTmDXShciMZhLmTvI",
-    alt: "Monochromatic modern home exterior with sharp cantilevered roof lines",
-    span: "md:col-span-8"
-  },
-  {
-    title: "KITCHEN NO. 42",
+    title: "RIFT SAWN WHITE OAK CABINETRY",
     year: "2024",
-    image: "https://lh3.googleusercontent.com/aida-public/AB6AXuBsPYobPmOkHjesHZYUyT1ROowuGr3Z-pfGIwfOGCsdTayG3FUbZfW2FTVaOl8VMEVXyG3DLGKEeESvHDhH8DJ_NWBiSaT6ktpBd-j8SENA45iQI4sUKkbj4js2aECaupjYOfyXcAIePBV8g8FOKRwkxLWv9XhGPy9jovn0MBZFEYOpSi8ik2h4SWgEPHJcIb8qtuSuiQsSql_NmiJ-k1ZyiJNJAixQbC1_QTA6v4_1toMlynviGLialboQZmK79NFYHeZBdwW0CO0",
-    alt: "Minimalist white kitchen with custom dark oak cabinetry",
-    span: "md:col-span-4 mt-24"
+    image: workCabinet,
+    alt: "Custom rift sawn white oak cabinet in workshop",
+    span: "md:col-span-6"
   },
   {
-    title: "THE ANNEX JOINERY",
-    year: "2022",
-    image: "https://lh3.googleusercontent.com/aida-public/AB6AXuCURSoa9sn25udxQ1Vk9JL1m_oRifOkISjhCKhHkNO08-mM3VS2uccYC9AdSNx4nIBwzSfmBwtby7ALA0j_nPhIyIGMALAcqoLMftydKBnMDLWwps84DgHN7WKjwYckD0-O_8ORTu_aQsoqtvQcFDXyjXBxBuuWG4nOZwsVKqRhIm4n5qSBJOuHmRs0LlgkHwLudZdWDaCBXTJ8NfrXUqDpDDCW-WecSymdyXLfp7QMJNygVl67-fNDPGtRXy_dqcQMx6wsuGW26yE",
-    alt: "Close up of structural timber joinery",
-    span: "md:col-span-4"
-  },
-  {
-    title: "LEWES EXTERIORS",
+    title: "BUILT-IN WINDOW SEAT",
     year: "2023",
-    image: "https://lh3.googleusercontent.com/aida-public/AB6AXuAGsuL1413C8TQxlkAJ5VHJ45qoKVQ0-IC1AFX5cx483FU88CuMhs_2yOXpW3kILYQfbwOShrw5lrgs66ql3_DINQeZjrM42oVFuPOhwZlqWGdnVFjWc7w4jm6kJigaGZ0GKsYLpGdTbClDn1rtHOLgqKkdo8xrZGKX1gvPW5cGP0cWWdiKIMMBF1qclDqWMfUTRQ4yBrBWclZS_k-U-AqyyYV5RhIXDufndGKti8EcCS5j0CCDEsEP4PiKFqkCAPxrM-BdHVFGqMQ",
-    alt: "Custom cedar deck with geometric levels",
-    span: "md:col-span-8 md:-mt-12"
+    image: workWindowSeat,
+    alt: "Custom built-in seating area for bay window",
+    span: "md:col-span-6"
+  },
+  {
+    title: "TIMBER FRAME — HUGH LOFTING TIMBER FRAMING",
+    year: "2023",
+    image: workTimber1,
+    alt: "Timber frame structure built with Hugh Lofting Timber Framing",
+    span: "md:col-span-6"
+  },
+  {
+    title: "TIMBER FRAME DETAIL — HUGH LOFTING TIMBER FRAMING",
+    year: "2023",
+    image: workTimber2,
+    alt: "Timber frame joinery detail built with Hugh Lofting Timber Framing",
+    span: "md:col-span-6"
   }
 ];
 
@@ -183,12 +187,11 @@ export default function Index() {
                 transition={{ duration: 0.8 }}
                 className={`${work.span} group cursor-pointer`}
               >
-                <div className="overflow-hidden bg-card">
+                <div className="overflow-hidden bg-card aspect-[4/3]">
                   <img 
                     src={work.image} 
                     alt={work.alt}
                     className="w-full h-full object-cover transition-all duration-700 group-hover:scale-105"
-                    referrerPolicy="no-referrer"
                   />
                 </div>
                 <div className="mt-6 flex justify-between items-baseline">
@@ -213,7 +216,7 @@ export default function Index() {
                 <h2 className="text-2xl font-[300] uppercase tracking-widest mb-4">ABOUT</h2>
                 <div className="h-1 w-12 bg-green-accent mb-10"></div>
                 <p className="text-outline font-light leading-relaxed text-sm md:text-base">
-                  I started building when I was 18 on a farm, when my boss handed me a tape measure and a speed square and put me to work on a barn. Since then, I've worked in carpentry, cabinetry, and timber framing, and spent some time away as a software engineer—but I've always found my way back. What's kept me in it is a kind of curiosity: how people build, how traditions develop, and what makes something work. I spend a lot of time reading, looking, and trying to understand it. There's always more to learn, and that's a big part of what I like about the work.
+                  I started building when I was 18 on a farm, when my boss handed me a tape measure and a speed square and put me to work on a barn. Since then, I've worked in carpentry, cabinetry, and timber framing, and spent some time away as a software engineer—but I've always found my way back. What's kept me in it is a kind of curiosity: how people build, how traditions develop, and what makes something work. I spend a lot of time reading, looking, and trying to understand it. There's always more to learn, and that's what I love about the work.
                 </p>
               </motion.div>
             </div>
@@ -224,7 +227,7 @@ export default function Index() {
               transition={{ duration: 0.8, delay: 0.2 }}
               className="md:col-span-5"
             >
-              <div className="aspect-[3/4] max-w-xs mx-auto overflow-hidden">
+              <div className="aspect-[3/4] max-w-[250px] mx-auto overflow-hidden">
                 <img src={builderPhoto} alt="Builder at work" className="w-full h-full object-cover" />
               </div>
             </motion.div>

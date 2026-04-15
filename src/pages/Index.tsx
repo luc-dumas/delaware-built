@@ -74,6 +74,7 @@ export default function Index() {
           <a href="#" className="border-b border-green-accent pb-1 text-green-accent">HOME</a>
           <a href="#services" className="hover:text-green-accent transition-colors">SERVICES</a>
           <a href="#works" className="hover:text-green-accent transition-colors">WORKS</a>
+          <a href="#about" className="hover:text-green-accent transition-colors">ABOUT</a>
           <a href="#contact" className="hover:text-green-accent transition-colors">CONTACT</a>
         </div>
 

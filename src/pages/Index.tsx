@@ -187,12 +187,11 @@ export default function Index() {
                 transition={{ duration: 0.8 }}
                 className={`${work.span} group cursor-pointer`}
               >
-                <div className="overflow-hidden bg-card">
+                <div className="overflow-hidden bg-card aspect-[4/3]">
                   <img 
                     src={work.image} 
                     alt={work.alt}
                     className="w-full h-full object-cover transition-all duration-700 group-hover:scale-105"
-                    referrerPolicy="no-referrer"
                   />
                 </div>
                 <div className="mt-6 flex justify-between items-baseline">

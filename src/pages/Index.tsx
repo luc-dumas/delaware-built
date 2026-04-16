@@ -2,107 +2,21 @@ import { motion } from "framer-motion";
 import { useState, useEffect } from "react";
 import logo from "@/assets/logo.svg";
 import builderPhoto from "@/assets/builder.jpg";
-import workCabinet from "@/assets/work-cabinet.jpg";
-import workCabinetShop from "@/assets/work-cabinet-shop.jpeg";
-import workWindowSeat from "@/assets/work-window-seat.jpeg";
-import workTimber1 from "@/assets/work-timber1.jpeg";
-import workTimber2 from "@/assets/work-timber2.jpg";
-import workMantel from "@/assets/work-mantel.jpeg";
-import workKitchen from "@/assets/work-kitchen.jpg";
-import workDeck1 from "@/assets/work-deck1.jpeg";
-import workDeck2 from "@/assets/work-deck2.jpeg";
-import workBookcase from "@/assets/work-bookcase.jpeg";
 import { supabase } from "@/integrations/supabase/client";
 import { toast } from "sonner";
 import ContactForm from "@/components/ContactForm";
+import WorkGallery from "@/components/WorkGallery";
 
 const services = [
   { id: "01", title: "Cabinetry", description: "Custom built-ins, kitchens, vanities, and architectural millwork." },
-  { id: "02", title: "Timber Framing", description: "Sheds, barn frames, pergolas, and other timber work." },
+  { id: "02", title: "Timber Framing", description: "Sheds, pergolas, and other timber work." },
   { id: "03", title: "Finish Carpentry", description: "Trim, molding, doors, and windows." },
   { id: "04", title: "Kitchen & Bath Remodels", description: "Full renovations, honest timelines, one point of contact." },
   { id: "05", title: "Decks", description: "Outdoor structures built to handle the weather." },
   { id: "06", title: "Built-ins", description: "Shelving, window seats, mud rooms, and storage designed around your space." },
   { id: "07", title: "Trim & Millwork", description: "Baseboards, casings, wainscoting, crown, and custom millwork." },
-  { id: "08", title: "General Remodeling", description: "Framing, drywall, flooring, tiling, painting, minor electrical and plumbing." },
-];
-
-const works = [
-  // Cabinetry project - rift sawn white oak
-  {
-    title: "RIFT SAWN WHITE OAK CABINETRY",
-    year: "2024",
-    image: workCabinet,
-    alt: "Custom rift sawn white oak cabinet in workshop",
-    span: "md:col-span-4"
-  },
-  {
-    title: "RIFT SAWN WHITE OAK — IN PROGRESS",
-    year: "2024",
-    image: workCabinetShop,
-    alt: "Cabinets being built and clamped in the shop",
-    span: "md:col-span-4"
-  },
-  // Kitchen & Mantel project - Tony Sandkamp Woodworks
-  {
-    title: "WHITE KITCHEN — TONY SANDKAMP WOODWORKS",
-    year: "2021",
-    image: workKitchen,
-    alt: "White kitchen with island built with Tony Sandkamp Woodworks",
-    span: "md:col-span-4"
-  },
-  {
-    title: "CUSTOM MANTEL — TONY SANDKAMP WOODWORKS",
-    year: "2021",
-    image: workMantel,
-    alt: "Custom built fireplace mantel",
-    span: "md:col-span-4"
-  },
-  // Built-ins
-  {
-    title: "BUILT-IN WINDOW SEAT",
-    year: "2023",
-    image: workWindowSeat,
-    alt: "Custom built-in seating area for bay window",
-    span: "md:col-span-4"
-  },
-  {
-    title: "BUILT-IN BOOKCASE",
-    year: "2024",
-    image: workBookcase,
-    alt: "Custom built-in bookcase with LED lighting and marble counter",
-    span: "md:col-span-4"
-  },
-  // Timber Frame project - Hugh Lofting
-  {
-    title: "TIMBER FRAME — HUGH LOFTING TIMBER FRAMING",
-    year: "2023",
-    image: workTimber1,
-    alt: "Timber frame structure built with Hugh Lofting Timber Framing",
-    span: "md:col-span-4"
-  },
-  {
-    title: "TIMBER FRAME DETAIL — HUGH LOFTING TIMBER FRAMING",
-    year: "2023",
-    image: workTimber2,
-    alt: "Timber frame joinery detail built with Hugh Lofting Timber Framing",
-    span: "md:col-span-4"
-  },
-  // Deck & Pergola project
-  {
-    title: "DECK & PERGOLA",
-    year: "2024",
-    image: workDeck1,
-    alt: "Custom deck and pergola with composite decking",
-    span: "md:col-span-4"
-  },
-  {
-    title: "DECK & PERGOLA — DETAIL",
-    year: "2024",
-    image: workDeck2,
-    alt: "Deck and pergola from side angle showing steps and framing",
-    span: "md:col-span-4"
-  },
+  { id: "08", title: "Windows & Doors", description: "Installation, replacement, and custom framing." },
+  { id: "09", title: "General Remodeling", description: "Framing, drywall, flooring, tiling, painting, minor electrical and plumbing." },
 ];
 
 const stats = [
@@ -230,30 +144,7 @@ export default function Index() {
             <div className="mt-4 h-1 w-12 bg-green-accent"></div>
           </div>
           
-          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-12 gap-6 md:px-12">
-            {works.map((work) => (
-              <motion.div 
-                key={work.title}
-                initial={{ opacity: 0, scale: 0.95 }}
-                whileInView={{ opacity: 1, scale: 1 }}
-                viewport={{ once: true }}
-                transition={{ duration: 0.8 }}
-                className={`${work.span} group cursor-pointer`}
-              >
-                <div className="overflow-hidden bg-card aspect-[4/3]">
-                  <img 
-                    src={work.image} 
-                    alt={work.alt}
-                    className="w-full h-full object-cover transition-all duration-700 group-hover:scale-105"
-                  />
-                </div>
-                <div className="mt-4 flex justify-between items-baseline">
-                  <h4 className="text-xs font-light uppercase tracking-wider">{work.title}</h4>
-                  <span className="text-[10px] font-semibold text-green-accent uppercase tracking-widest ml-2 shrink-0">{work.year}</span>
-                </div>
-              </motion.div>
-            ))}
-          </div>
+          <WorkGallery />
         </section>
 
         {/* About Section */}

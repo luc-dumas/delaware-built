@@ -15,7 +15,7 @@ const services = [
   { id: "05", title: "Decks", description: "Outdoor structures built to handle the weather." },
   { id: "06", title: "Built-ins", description: "Shelving, window seats, mud rooms, and storage designed around your space." },
   { id: "07", title: "Trim & Millwork", description: "Baseboards, casings, wainscoting, crown, and custom millwork." },
-  { id: "08", title: "Windows & Doors", description: "Installation, replacement, and custom framing." },
+  { id: "08", title: "Windows & Doors", description: "Installation and replacement." },
   { id: "09", title: "General Remodeling", description: "Framing, drywall, flooring, tiling, painting, minor electrical and plumbing." },
 ];
 

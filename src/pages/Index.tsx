@@ -28,6 +28,7 @@ const services = [
 ];
 
 const works = [
+  // Cabinetry project - rift sawn white oak
   {
     title: "RIFT SAWN WHITE OAK CABINETRY",
     year: "2024",
@@ -36,12 +37,13 @@ const works = [
     span: "md:col-span-4"
   },
   {
-    title: "CABINETRY IN PROGRESS",
+    title: "RIFT SAWN WHITE OAK — IN PROGRESS",
     year: "2024",
     image: workCabinetShop,
     alt: "Cabinets being built and clamped in the shop",
     span: "md:col-span-4"
   },
+  // Kitchen & Mantel project - Tony Sandkamp Woodworks
   {
     title: "WHITE KITCHEN — TONY SANDKAMP WOODWORKS",
     year: "2021",
@@ -50,12 +52,13 @@ const works = [
     span: "md:col-span-4"
   },
   {
-    title: "CUSTOM MANTEL",
-    year: "2024",
+    title: "CUSTOM MANTEL — TONY SANDKAMP WOODWORKS",
+    year: "2021",
     image: workMantel,
-    alt: "Custom built fireplace mantel in workshop",
+    alt: "Custom built fireplace mantel",
     span: "md:col-span-4"
   },
+  // Built-ins
   {
     title: "BUILT-IN WINDOW SEAT",
     year: "2023",
@@ -63,6 +66,14 @@ const works = [
     alt: "Custom built-in seating area for bay window",
     span: "md:col-span-4"
   },
+  {
+    title: "BUILT-IN BOOKCASE",
+    year: "2024",
+    image: workBookcase,
+    alt: "Custom built-in bookcase with LED lighting and marble counter",
+    span: "md:col-span-4"
+  },
+  // Timber Frame project - Hugh Lofting
   {
     title: "TIMBER FRAME — HUGH LOFTING TIMBER FRAMING",
     year: "2023",
@@ -76,7 +87,22 @@ const works = [
     image: workTimber2,
     alt: "Timber frame joinery detail built with Hugh Lofting Timber Framing",
     span: "md:col-span-4"
-  }
+  },
+  // Deck & Pergola project
+  {
+    title: "DECK & PERGOLA",
+    year: "2024",
+    image: workDeck1,
+    alt: "Custom deck and pergola with composite decking",
+    span: "md:col-span-4"
+  },
+  {
+    title: "DECK & PERGOLA — DETAIL",
+    year: "2024",
+    image: workDeck2,
+    alt: "Deck and pergola from side angle showing steps and framing",
+    span: "md:col-span-4"
+  },
 ];
 
 const stats = [

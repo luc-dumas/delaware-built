@@ -17,6 +17,9 @@ import workPorchDone from "@/assets/work-porch-done.jpeg";
 import workBallistersInstalled from "@/assets/work-ballister-installed.jpeg";
 import workBallisterPieces from "@/assets/work-ballister-pieces.jpeg";
 import workDeckLanding from "@/assets/work-deck-landing.jpeg";
+import workCedarFence from "@/assets/work-cedar-fence.jpeg";
+import workWallCabinets1 from "@/assets/work-wall-cabinets1.jpeg";
+import workWallCabinets2 from "@/assets/work-wall-cabinets2.jpeg";
 
 interface WorkImage {
   src: string;
@@ -50,6 +53,15 @@ const projects: WorkProject[] = [
     ],
   },
   {
+    title: "WALL CABINETS — TONY SANDKAMP WOODWORKS",
+    cover: workWallCabinets1,
+    coverAlt: "Modern wall cabinets with walnut accent",
+    images: [
+      { src: workWallCabinets1, alt: "Modern wall cabinets with walnut accent frame" },
+      { src: workWallCabinets2, alt: "Wall cabinets and kitchen area" },
+    ],
+  },
+  {
     title: "BUILT-IN WINDOW SEAT",
     cover: workWindowSeat,
     coverAlt: "Custom built-in seating area for bay window",
@@ -75,12 +87,12 @@ const projects: WorkProject[] = [
     ],
   },
   {
-    title: "DECK & PERGOLA",
+    title: "DECK",
     cover: workDeck1,
-    coverAlt: "Custom deck and pergola",
+    coverAlt: "Custom deck with composite decking",
     images: [
-      { src: workDeck1, alt: "Custom deck and pergola with composite decking" },
-      { src: workDeck2, alt: "Deck and pergola from side angle" },
+      { src: workDeck1, alt: "Custom deck with composite decking" },
+      { src: workDeck2, alt: "Deck from side angle" },
     ],
   },
   {
@@ -102,11 +114,19 @@ const projects: WorkProject[] = [
     ],
   },
   {
-    title: "DECK LANDING",
+    title: "MAHOGANY DECK LANDING",
     cover: workDeckLanding,
-    coverAlt: "Custom hardwood deck landing",
+    coverAlt: "Custom mahogany deck landing",
     images: [
-      { src: workDeckLanding, alt: "Custom hardwood deck landing at front door" },
+      { src: workDeckLanding, alt: "Custom mahogany deck landing at front door" },
+    ],
+  },
+  {
+    title: "CEDAR FENCE",
+    cover: workCedarFence,
+    coverAlt: "Custom cedar fence",
+    images: [
+      { src: workCedarFence, alt: "Custom cedar fence installation" },
     ],
   },
 ];

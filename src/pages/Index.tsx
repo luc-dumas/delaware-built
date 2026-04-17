@@ -2,6 +2,7 @@ import { motion } from "framer-motion";
 import { useState, useEffect } from "react";
 import logo from "@/assets/logo.svg";
 import builderPhoto from "@/assets/builder.jpg";
+import heroImage from "@/assets/hero-window-seat.jpeg";
 import { supabase } from "@/integrations/supabase/client";
 import { toast } from "sonner";
 import ContactForm from "@/components/ContactForm";
@@ -89,10 +90,9 @@ export default function Index() {
             >
               <div className="aspect-[4/5] overflow-hidden">
                 <img
-                  src="https://lh3.googleusercontent.com/aida-public/AB6AXuChZCPkBFI3uQRUakAn2cte7z02A_nCwA9D7b7u4FK1U7zePun3rJM7HojGgy8iwx39PzbNfY6i9g93UUAu_e95g2y7lwPadCieaS0OmcGoyEh0V76qwfLqlKYWdrAy_VNaClGoaTbTZTEqzmhu5kgXQCr9c_wbyXXBm7oL8qBmmMgOi9BXPxY9bl0nFhqofyb4VkGwtAzw87L-j_Y0snFSA2wE02N32as_61dnfaZbpfn79HYhlynWacq8d-iTmDXShciMZhLmTvI"
-                  alt="Modern home built by Delaware Built"
+                  src={heroImage}
+                  alt="Custom built-in window seat with shutters by Delaware Built"
                   className="w-full h-full object-cover"
-                  referrerPolicy="no-referrer"
                 />
               </div>
               <div className="absolute -bottom-4 -left-4 bg-green-accent text-green-accent-foreground p-6">

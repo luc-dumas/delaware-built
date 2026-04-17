@@ -97,7 +97,7 @@ export default function Index() {
               </div>
               <div className="absolute -bottom-4 -left-4 bg-green-accent text-green-accent-foreground p-6">
                 <p className="text-xs font-bold uppercase tracking-widest">Built-In Window Seat</p>
-                <p className="text-[10px] uppercase tracking-widest mt-1 opacity-80">Precision Built</p>
+                <p className="text-[10px] uppercase tracking-widest mt-1 opacity-80">Custom Built</p>
               </div>
             </motion.div>
           </div>

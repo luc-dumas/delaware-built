@@ -21,6 +21,9 @@ import workCedarFence from "@/assets/work-cedar-fence.jpeg";
 import workWallCabinets1 from "@/assets/work-wall-cabinets1.jpeg";
 import workWallCabinets2 from "@/assets/work-wall-cabinets2.jpeg";
 import workRefinishedTable from "@/assets/work-refinished-table.jpg";
+import workKumikoLamp1 from "@/assets/work-kumiko-lamp1.jpeg";
+import workKumikoLamp2 from "@/assets/work-kumiko-lamp2.jpeg";
+import workKumikoLamp3 from "@/assets/work-kumiko-lamp3.jpg";
 
 interface WorkImage {
   src: string;
@@ -131,11 +134,21 @@ const projects: WorkProject[] = [
     ],
   },
   {
-    title: "REFINISHED DINING TABLE",
+    title: "REFINISHED CHERRY DINING TABLE WITH WALNUT INLAY",
     cover: workRefinishedTable,
-    coverAlt: "Refinished cherry dining table",
+    coverAlt: "Refinished cherry dining table with walnut inlay",
     images: [
-      { src: workRefinishedTable, alt: "Refinished cherry dining table with inlay detail" },
+      { src: workRefinishedTable, alt: "Refinished cherry dining table with walnut inlay" },
+    ],
+  },
+  {
+    title: "KUMIKO LAMP",
+    cover: workKumikoLamp2,
+    coverAlt: "Handcrafted kumiko lamp glowing",
+    images: [
+      { src: workKumikoLamp2, alt: "Handcrafted kumiko lamp glowing in the shop" },
+      { src: workKumikoLamp1, alt: "Kumiko lamp on workbench during build" },
+      { src: workKumikoLamp3, alt: "Kumiko lamp frame design renderings in varying sizes" },
     ],
   },
 ];

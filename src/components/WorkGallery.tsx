@@ -130,6 +130,14 @@ const projects: WorkProject[] = [
       { src: workCedarFence, alt: "Custom cedar fence installation" },
     ],
   },
+  {
+    title: "REFINISHED DINING TABLE",
+    cover: workRefinishedTable,
+    coverAlt: "Refinished cherry dining table",
+    images: [
+      { src: workRefinishedTable, alt: "Refinished cherry dining table with inlay detail" },
+    ],
+  },
 ];
 
 export default function WorkGallery() {

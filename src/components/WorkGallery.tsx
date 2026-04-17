@@ -20,6 +20,7 @@ import workDeckLanding from "@/assets/work-deck-landing.jpeg";
 import workCedarFence from "@/assets/work-cedar-fence.jpeg";
 import workWallCabinets1 from "@/assets/work-wall-cabinets1.jpeg";
 import workWallCabinets2 from "@/assets/work-wall-cabinets2.jpeg";
+import workRefinishedTable from "@/assets/work-refinished-table.jpg";
 
 interface WorkImage {
   src: string;
@@ -127,6 +128,14 @@ const projects: WorkProject[] = [
     coverAlt: "Custom cedar fence",
     images: [
       { src: workCedarFence, alt: "Custom cedar fence installation" },
+    ],
+  },
+  {
+    title: "REFINISHED DINING TABLE",
+    cover: workRefinishedTable,
+    coverAlt: "Refinished cherry dining table",
+    images: [
+      { src: workRefinishedTable, alt: "Refinished cherry dining table with inlay detail" },
     ],
   },
 ];

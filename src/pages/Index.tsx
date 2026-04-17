@@ -92,11 +92,11 @@ export default function Index() {
                 <img
                   src={heroImage}
                   alt="Custom built-in window seat with shutters by Delaware Built"
-                  className="w-full h-full object-cover"
+                  className="w-full h-full object-cover scale-90"
                 />
               </div>
               <div className="absolute -bottom-4 -left-4 bg-green-accent text-green-accent-foreground p-6">
-                <p className="text-xs font-bold uppercase tracking-widest">Est. 2012</p>
+                <p className="text-xs font-bold uppercase tracking-widest">Built-In Window Seat</p>
                 <p className="text-[10px] uppercase tracking-widest mt-1 opacity-80">Precision Built</p>
               </div>
             </motion.div>

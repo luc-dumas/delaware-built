@@ -20,6 +20,7 @@ import workDeckLanding from "@/assets/work-deck-landing.jpeg";
 import workCedarFence from "@/assets/work-cedar-fence.jpeg";
 import workWallCabinets1 from "@/assets/work-wall-cabinets1.jpeg";
 import workWallCabinets2 from "@/assets/work-wall-cabinets2.jpeg";
+import workRefinishedTable from "@/assets/work-refinished-table.jpg";
 
 interface WorkImage {
   src: string;
